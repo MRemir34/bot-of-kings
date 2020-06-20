@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
    
-    const embed = new Discord.RichEmbed()
+    const efhmedia = new Discord.RichEmbed()
      .setTitle(`Help Menu \nMy Prefixes: ("q!")-("i.")-("!")-("!!")-("&")-(">")-(".")-("/")-("k/")`, true)
        .addField('Counter Commands',`set-counter number #channel \nreset-counter`, true)
 .addField('Economy Commands',`coming soon`)
@@ -11,7 +11,7 @@ exports.run = (client, message, args) => {
          .addField('Game Commands',`coming soon`, true)
      .addField('The Other Commands',`myprefix \nlinks \navatar \nbanlist `, true)
 
-    message.channel.send(embed)
+    message.channel.send(efhmedia)
   
 };
 exports.conf = {
