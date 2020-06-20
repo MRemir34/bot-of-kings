@@ -5,7 +5,7 @@ module.exports = async message => {
   let client = message.client;
   if (message.author.bot) return;
   let prefix = client.ayarlar.prefix;
- let prefixes = ["q!", "i.", "!", "!!", "&", ">", ".", "/", "k/"];
+ let prefixes = ["PREFIX_1", "PREFIX_2"];//ek prefixler ana prefixinizi yazmayı unutmayın yoksa çalışmaz!!
     
     for (var i = 0; i < prefixes.length; i++) {
       if (message.content.startsWith(prefixes[i])) prefix = prefixes[i];
