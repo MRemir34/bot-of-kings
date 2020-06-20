@@ -23,15 +23,10 @@ const http = require('http');
     setInterval(() => {
     http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
     }, 280000);
-const { readdirSync } = require("fs");
-const { join } = require("path");
-const { TOKEN, PREFIX } = require("./config.json");
 
 
-client.login(TOKEN);
-client.commands = new Discord.Collection();
-client.prefix = PREFIX;
-client.queue = new Map();
+
+
 
 client.ayarlar = {
   token: "NzIxNjM2NTM0NDAyNTQ3ODQz.XuXsMg.fDZKdk5I9js0M2zntcw_ryfkHlo",
